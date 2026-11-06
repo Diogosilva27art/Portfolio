@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<!-- DOCTYPE indica que estamos a utilizar HTML5 -->
+
+<html lang="pt">
+<!-- html é o elemento principal da página -->
+<!-- lang="pt" indica que o idioma é português -->
+
+<head>
+<!-- head contém as configurações e ligações a ficheiros externos -->
+
+<meta charset="UTF-8">
+<!-- meta charset permite apresentar corretamente acentos e caracteres especiais -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- viewport adapta a largura da página ao dispositivo -->
+<!-- É importante para a responsividade em telemóveis e tablets -->
+
+<title>Portfólio | Diogo Silva</title>
+<!-- title define o nome que aparece no separador do navegador -->
+
+<!-- BOOTSTRAP -->
+<!-- link liga um ficheiro externo ao HTML -->
+<!-- href indica o endereço do ficheiro -->
+<!-- Bootstrap é uma biblioteca CSS que facilita o layout responsivo -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS PERSONALIZADO -->
+<!-- Este ficheiro permite alterar cores, botões e outros estilos -->
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<!-- BODY -->
+<!-- body contém todo o conteúdo visível da página -->
+<!-- bg-dark é uma classe Bootstrap que aplica um fundo escuro -->
+<!-- text-white aplica texto branco -->
+<body class="bg-dark text-white">
+
+
+<!-- ======================================= -->
+<!-- CABEÇALHO E MENU DE NAVEGAÇÃO -->
+<!-- ======================================= -->
+
+<!-- header é uma tag semântica que identifica o cabeçalho -->
+<header>
+
+<!-- nav identifica a área de navegação -->
+<!-- navbar é uma classe Bootstrap para criar menus -->
+<!-- navbar-expand-lg mostra o menu completo em ecrãs grandes -->
+<!-- navbar-dark adapta os elementos do menu a um fundo escuro -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<!-- container centraliza o conteúdo e cria margens laterais -->
+<div class="container">
+
+<!-- LOGÓTIPO -->
+<!-- a cria uma ligação -->
+<!-- href="#inicio" leva o utilizador à secção inicial -->
+<!-- navbar-brand identifica a marca no menu -->
+<!-- fw-bold coloca o texto a negrito -->
+<!-- span permite aplicar um estilo apenas ao ponto -->
+<!-- text-laranja é uma classe criada no CSS personalizado -->
+<a class="navbar-brand fw-bold" href="#inicio">
+DS<span class="text-laranja">.</span>
+</a>
+
+<!-- BOTÃO HAMBURGER -->
+<!-- button cria um botão interativo -->
+<!-- navbar-toggler é o botão do menu mobile -->
+<!-- data-bs-toggle="collapse" permite abrir e fechar o menu -->
+<!-- data-bs-target indica o ID do menu que será controlado -->
+<!-- aria-label descreve o botão para tecnologias de apoio -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- LINKS DE NAVEGAÇÃO -->
+<!-- div agrupa elementos para facilitar a organização -->
+<!-- collapse permite esconder ou mostrar o menu -->
+<!-- navbar-collapse organiza os links dentro da navbar -->
+<!-- id="menuPrincipal" identifica este elemento -->
+<div class="collapse navbar-collapse" id="menuPrincipal">
+
+<!-- ul cria uma lista não ordenada -->
+<!-- navbar-nav aplica os estilos de navegação do Bootstrap -->
+<!-- ms-auto coloca os links à direita -->
+<ul class="navbar-nav ms-auto">
+
+<!-- li representa um elemento da lista -->
+<!-- nav-item identifica cada item do menu -->
+<!-- nav-link aplica o estilo de ligação do Bootstrap -->
+<li class="nav-item">
+<a class="nav-link" href="#inicio">Início</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#sobre">Sobre mim</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#competencias">Competências</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#projetos">Projetos</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contactos">Contactos</a>
+</li>
+
+</ul>
+</div>
+
+</div>
+</nav>
+</header>
+
+
+<!-- ======================================= -->
+<!-- CONTEÚDO PRINCIPAL -->
+<!-- ======================================= -->
+
+<!-- main é uma tag semântica que identifica o conteúdo principal -->
+<main>
+
+
+<!-- ======================================= -->
+<!-- SECÇÃO INICIAL -->
+<!-- ======================================= -->
+
+<!-- section divide a página em áreas temáticas -->
+<!-- id="inicio" permite navegar para esta secção -->
+<!-- py-5 adiciona espaçamento em cima e em baixo -->
+<section id="inicio" class="py-5">
+
+<div class="container">
+
+<!-- row cria uma linha no sistema de grelha do Bootstrap -->
+<!-- align-items-center alinha os elementos verticalmente -->
+<div class="row align-items-center">
+
+<!-- col-lg-9 ocupa 9 das 12 colunas em ecrãs grandes -->
+<!-- Em ecrãs mais pequenos ocupa a largura disponível -->
+<div class="col-lg-9">
+
+<!-- p cria um parágrafo -->
+<!-- fw-semibold aplica texto seminegrito -->
+<!-- mb-2 adiciona margem inferior -->
+<p class="text-laranja fw-semibold mb-2">PORTFÓLIO PESSOAL / 2026</p>
+
+<!-- h1 é o título principal da página -->
+<!-- display-3 aumenta o tamanho visual do título -->
+<!-- fw-bold aplica negrito -->
+<!-- mb-3 adiciona margem inferior -->
+<h1 class="display-3 fw-bold mb-3">Olá, sou o Diogo Silva.</h1>
+
+<!-- h2 é um título de segundo nível -->
+<!-- display-5 define um tamanho de destaque -->
+<h2 class="display-5 text-laranja mb-3">Arte, Design & Tecnologia.</h2>
+
+<!-- lead destaca visualmente um parágrafo -->
+<!-- text-white-50 aplica texto branco com transparência -->
+<!-- mb-4 cria espaçamento inferior -->
+<p class="lead text-white-50 mb-4">Sou um profissional criativo com experiência em tatuagem e desenho, e interesse pelo design digital e desenvolvimento web.</p>
+
+<!-- a também pode funcionar como botão quando recebe classes Bootstrap -->
+<!-- btn aplica o estilo base de botão -->
+<!-- btn-laranja é uma classe personalizada -->
+<!-- btn-lg aumenta o tamanho do botão -->
+<!-- &rarr; representa uma seta para a direita -->
+<a href="#projetos" class="btn btn-laranja btn-lg">Ver os meus projetos &rarr;</a>
+
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- ======================================= -->
+<!-- SECÇÃO SOBRE MIM -->
+<!-- ======================================= -->
+
+<!-- bg-black aplica um fundo preto -->
+<section id="sobre" class="py-5 bg-black">
+
+<div class="container">
+<div class="row align-items-center">
+
+<!-- col-lg-8 ocupa 8 das 12 colunas em ecrãs grandes -->
+<div class="col-lg-8">
+
+<p class="text-laranja fw-semibold">01 / SOBRE MIM</p>
+
+<!-- h2 identifica o título da secção -->
+<h2 class="display-5 fw-bold mb-3">Quem sou eu?</h2>
+
+<!-- Estes parágrafos apresentam o meu percurso -->
+<p class="text-white-50">Sou o Diogo Silva, um profissional criativo com experiência em tatuagem, desenho e artes visuais.</p>
+
+<p class="text-white-50">Ao longo do meu percurso, desenvolvi competências artísticas e técnicas. Atualmente, estou a aprofundar os meus conhecimentos em design de interfaces, UX/UI e desenvolvimento web.</p>
+
+<p class="text-white-50">Gosto de explorar novas ideias, aprender ferramentas e desenvolver projetos que combinem criatividade, estética e funcionalidade.</p>
+
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- ======================================= -->
+<!-- SECÇÃO COMPETÊNCIAS -->
+<!-- ======================================= -->
+
+<section id="competencias" class="py-5">
+
+<div class="container">
+
+<p class="text-laranja fw-semibold">02 / COMPETÊNCIAS</p>
+<h2 class="display-5 fw-bold mb-4">O que faço</h2>
+
+<!-- SISTEMA DE GRELHA DO BOOTSTRAP -->
+<!-- row cria uma linha -->
+<!-- g-4 cria espaçamento entre as colunas -->
+<div class="row g-4">
+
+<!-- col-md-4 ocupa 4 de 12 colunas em ecrãs médios ou maiores -->
+<!-- Como existem três colunas, ficam três cartões lado a lado -->
+<!-- Em telemóveis os cartões ficam empilhados -->
+
+<!-- CARTÃO 1: ARTES VISUAIS -->
+<div class="col-md-4">
+
+<!-- card é um componente visual do Bootstrap -->
+<!-- bg-secondary aplica um fundo cinzento -->
+<!-- h-100 faz o cartão ocupar 100% da altura da coluna -->
+<div class="card bg-secondary text-white h-100">
+
+<!-- card-body define a área de conteúdo do cartão -->
+<!-- p-4 adiciona espaçamento interior -->
+<div class="card-body p-4">
+
+<!-- h3 é um título de terceiro nível -->
+<!-- h5 aplica o tamanho visual de um título h5 -->
+<h3 class="h5 text-laranja">Artes Visuais</h3>
+
+<!-- mb-0 remove a margem inferior -->
+<p class="mb-0">Tatuagem, desenho, realismo e composição visual.</p>
+
+</div>
+</div>
+</div>
+
+<!-- CARTÃO 2: DESIGN UX/UI -->
+<div class="col-md-4">
+<div class="card bg-secondary text-white h-100">
+<div class="card-body p-4">
+
+<h3 class="h5 text-laranja">Design UX/UI</h3>
+<p class="mb-0">Design de interfaces, prototipagem e experiência de utilizador.</p>
+
+</div>
+</div>
+</div>
+
+<!-- CARTÃO 3: DESENVOLVIMENTO WEB -->
+<div class="col-md-4">
+<div class="card bg-secondary text-white h-100">
+<div class="card-body p-4">
+
+<h3 class="h5 text-laranja">Desenvolvimento Web</h3>
+<p class="mb-0">HTML, CSS, Bootstrap e conhecimentos de JavaScript.</p>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ======================================= -->
+<!-- SECÇÃO PROJETOS -->
+<!-- ======================================= -->
+
+<section id="projetos" class="py-5 bg-black">
+
+<div class="container">
+
+<p class="text-laranja fw-semibold">03 / PROJETOS</p>
+<h2 class="display-5 fw-bold mb-4">Trabalhos em destaque</h2>
+
+<!-- Grelha responsiva para apresentar três projetos -->
+<div class="row g-4">
+
+
+<!-- PROJETO 1: DS TATTOOER -->
+<div class="col-md-4">
+<div class="card bg-dark text-white h-100">
+
+<!-- img insere uma imagem -->
+<!-- src indica o caminho do ficheiro -->
+<!-- alt descreve a imagem para acessibilidade -->
+<!-- card-img-top coloca a imagem no topo do cartão -->
+<img src="IMG_3368.jpeg" class="card-img-top" alt="Projeto de tatuagem artística">
+
+<div class="card-body p-4">
+
+<!-- small reduz visualmente o tamanho do texto -->
+<p class="text-laranja small">ARTES VISUAIS</p>
+
+<h3 class="h5">DS Tattooer</h3>
+<p class="text-white-50">Projetos de tatuagem, desenho artístico e composição visual.</p>
+
+</div>
+</div>
+</div>
+
+
+<!-- PROJETO 2: INTERFACES DIGITAIS -->
+<div class="col-md-4">
+<div class="card bg-dark text-white h-100">
+
+<img src="Ambiente Tech com Portfólio em Código.jpeg" class="card-img-top" alt="Projeto de design de interfaces">
+
+<div class="card-body p-4">
+<p class="text-laranja small">DESIGN UX/UI</p>
+<h3 class="h5">Interfaces Digitais</h3>
+<p class="text-white-50">Criação de wireframes e protótipos de aplicações no Figma.</p>
+</div>
+
+</div>
+</div>
+
+
+<!-- PROJETO 3: PROJETOS WEB -->
+<div class="col-md-4">
+<div class="card bg-dark text-white h-100">
+
+<img src="desenvolvimento-web.jpeg" class="card-img-top" alt="Projeto de desenvolvimento web">
+
+<div class="card-body p-4">
+<p class="text-laranja small">DESENVOLVIMENTO WEB</p>
+<h3 class="h5">Projetos Web</h3>
+<p class="text-white-50">Desenvolvimento de páginas responsivas com HTML, CSS e Bootstrap.</p>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- ======================================= -->
+<!-- SECÇÃO CONTACTOS -->
+<!-- ======================================= -->
+
+<section id="contactos" class="py-5">
+
+<div class="container">
+<div class="row">
+<div class="col-lg-8">
+
+<p class="text-laranja fw-semibold">04 / CONTACTOS</p>
+<h2 class="display-5 fw-bold mb-3">Vamos conversar?</h2>
+
+<p class="text-white-50 mb-4">Tens alguma questão ou proposta de colaboração? Entra em contacto comigo.</p>
+
+<!-- FLEXBOX -->
+<!-- d-flex ativa o Flexbox -->
+<!-- flex-column coloca os elementos verticalmente -->
+<!-- gap-3 adiciona espaço entre os contactos -->
+<div class="d-flex flex-column gap-3">
+
+
+
+<!-- CONTACTO POR EMAIL -->
+<div>
+    <h3 class="h5 text-laranja">Email</h3>
+    <p class="mb-0">
+        <a href="mailto:diogofs@hotmail.com"
+           class="text-white text-decoration-none">
+            diogofs@hotmail.com
+        </a>
+    </p>
+</div>
+
+
+<!-- CONTACTO POR INSTAGRAM -->
+<div>
+    <h3 class="h5 text-laranja">Instagram</h3>
+    <p class="mb-0">
+        <a href="https://www.instagram.com/diogosilva.tattooer?dlrf=cW8xZHhucXJucjdx&utm_source=qr"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="text-white text-decoration-none">
+            dstattooer
+        </a>
+    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Fecha o conteúdo principal da página -->
+</main>
+
+
+<!-- ======================================= -->
+<!-- RODAPÉ -->
+<!-- ======================================= -->
+
+<!-- footer é uma tag semântica que identifica o rodapé -->
+<!-- bg-black aplica fundo preto -->
+<!-- py-4 adiciona espaçamento vertical -->
+<footer class="bg-black py-4">
+
+<!-- text-center centra o texto -->
+<div class="container text-center">
+
+<!-- © representa o símbolo de direitos de autor -->
+<p class="text-white-50 mb-0">© 2026 Diogo Silva. Todos os direitos reservados.</p>
+
+</div>
+</footer>
+
+
+<!-- ======================================= -->
+<!-- JAVASCRIPT DO BOOTSTRAP -->
+<!-- ======================================= -->
+
+<!-- script permite carregar JavaScript -->
+<!-- Este ficheiro ativa funcionalidades interativas do Bootstrap -->
+<!-- Neste projeto é necessário para abrir e fechar o menu hamburger -->
+<!-- bundle inclui o JavaScript do Bootstrap e o Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
